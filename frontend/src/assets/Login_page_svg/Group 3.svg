@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="185.213" height="224.177" viewBox="0 0 185.213 224.177">
+  <g id="Group_3" data-name="Group 3" transform="matrix(0.996, -0.087, 0.087, 0.996, -198.149, -529.2)" class="animal-avatar">
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(150 559)" fill="#53321a" stroke="#707070" stroke-width="1">
+      <ellipse cx="83.757" cy="105.189" rx="83.757" ry="105.189" stroke="none"/>
+      <ellipse cx="83.757" cy="105.189" rx="83.257" ry="104.689" fill="none"/>
+    </g>
+    <path id="Path_1" data-name="Path 1" d="M-1798.02-521.091l34.744,15.942,44.349-15.942,15.4,24.892-27.718,33.243h-59.271l-31.376-33.243Z" transform="translate(1996.469 1166.252)" fill="#91642e" stroke="#707070" stroke-width="1"/>
+    <path id="Path_2" data-name="Path 2" d="M-1776-454.442l-10.122,13.325V-414.3h61.35v-26.818l-14.064-13.325Z" transform="translate(1987.816 1163.377)" fill="#c49355" stroke="#707070" stroke-width="1"/>
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(211.757 686.275)" fill="#fff" stroke="#707070" stroke-width="1">
+      <ellipse cx="22" cy="16" rx="22" ry="16" stroke="none"/>
+      <ellipse cx="22" cy="16" rx="21.5" ry="15.5" fill="none"/>
+    </g>
+    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(218.984 695.354)" stroke="#707070" stroke-width="1">
+      <ellipse cx="7" cy="8" rx="7" ry="8" stroke="none"/>
+      <ellipse cx="7" cy="8" rx="6.5" ry="7.5" fill="none"/>
+    </g>
+    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(233.559 695.354)" stroke="#707070" stroke-width="1">
+      <ellipse cx="7" cy="8" rx="7" ry="8" stroke="none"/>
+      <ellipse cx="7" cy="8" rx="6.5" ry="7.5" fill="none"/>
+    </g>
+    <path id="Path_3" data-name="Path 3" d="M-1519.312-372.033h24.628s1.815,9.569-11.56,9.569S-1519.312-372.033-1519.312-372.033Z" transform="translate(1714.191 1041.578)" stroke="#707070" stroke-width="1"/>
+    <path id="Path_4" data-name="Path 4" d="M-1519.312-372.033h24.628s1.815,9.569-11.56,9.569S-1519.312-372.033-1519.312-372.033Z" transform="translate(1766.267 1041.578)" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

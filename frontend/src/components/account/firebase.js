@@ -11,6 +11,7 @@ import "firebase/auth";
 import "firebase/firestore";
 
 import {firebaseConfig} from "./secret";
+import { setAccount } from ".";
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -65,6 +66,9 @@ export const signinWithGoogle = (callback) => {
     accountInfo.name = user.displayName
     accountInfo.uid = user.uid
     accountInfo.signed = true
+
+      setAccount(accountInfo)
+
     if (callback) {
         console.log("Executing callback from signinWithGoogle")
         callback(accountInfo)

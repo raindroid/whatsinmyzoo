@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'GoodPeopleFont';
+    src: local('GOOD PEOPLE'), url(fonts/GOOD\ PEOPLE.otf) format('truetype');
+  }
+
+
+@font-face {
+    font-family: 'DailyHours';
+    src: url(fonts/DailyHours-ALxxD.woff) format('woff');
+  }

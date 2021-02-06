@@ -1,6 +1,6 @@
 //import React from "react";
 import React, { Component } from "react";
-import { Button, LinearProgress, TextField } from "@material-ui/core";
+import { Button, LinearProgress, makeStyles, TextField } from "@material-ui/core";
 import {
   createUserWithEmailAndPassword,
   signinWithEmail,
@@ -15,7 +15,27 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { accountInfo } from "./firebase";
 
+const useStyles = makeStyles((theme) => ({
+  welcomeBtn: {
+    borderRadius: "42px",
+    padding: "0",
+    paddingTop: "4px",
+    paddingLeft: "40px",
+    paddingRight: "40px",
+    background: "#fdf2c5",
+    color: "#ffad35",
+    fontFamily: "DailyHours",
+    fontSize: "24px",
+    "&:hover": {
+      backgroundColor: "#f2d86b",
+      color: "#FFF",
+      border: "1px solid black",
+    },
+  },
+}))
+
 export function LoginDialog(props) {
+  const classes = useStyles();
     const [open, setOpen] = React.useState(false);
   
     const handleClickOpen = () => {
@@ -27,6 +47,9 @@ export function LoginDialog(props) {
     };
   
     let callback = () => {
+
+      
+
       if ("updateCount" in props) {
         props.updateCount();
         console.log("Force update");
@@ -61,12 +84,14 @@ export function LoginDialog(props) {
     return (
       <div>
         <Button
-          variant="outlined"
-          color="primary"
+          variant="contained"
+          className={classes.welcomeBtn}
+          labelStyle={{ fontSize: "63px" }}
+          size="large"
+          variant="text"
           onClick={handleClickOpen}
-          style={{ color: "white", background: "#DDA04B", margin: "auto", bottom: "12px", position: "fixed" }}
         >
-          {accountInfo.signed ? accountInfo.name : "Sign in / sign up"}
+          LOGIN
         </Button>
         <Dialog
           open={open}

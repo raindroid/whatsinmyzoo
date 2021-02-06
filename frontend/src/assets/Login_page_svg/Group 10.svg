@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200.84" height="229.211" viewBox="0 0 200.84 229.211">
+  <g id="Group_10" data-name="Group 10" transform="matrix(0.995, 0.105, -0.105, 0.995, -1467.172, -286.023)" class="animal-avatar">
+    <path id="Path_26" data-name="Path 26" d="M-528.1-1033.414h85.389l34.406,50.737,7.766,64.968-80.84,40.174-81.561-40.174,6.094-64.968Z" transform="translate(2080.448 1218.427)" fill="#efabba" stroke="#707070" stroke-width="1"/>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(1542.811 125.443) rotate(76)" fill="#ec7793">
+      <path d="M 109.4522094726562 47.61948776245117 L 1.338042497634888 47.61948776245117 L 55.39512634277344 0.6623076796531677 L 109.4522094726562 47.61948776245117 Z" stroke="none"/>
+      <path d="M 55.39512634277344 1.3245849609375 L 2.676071166992188 47.11948394775391 L 108.1141815185547 47.11948394775391 L 55.39512634277344 1.3245849609375 M 55.39512634277344 -7.62939453125e-06 L 110.7902526855469 48.11948394775391 L 0 48.11948394775391 L 55.39512634277344 -7.62939453125e-06 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(1622.975 234.198) rotate(-79)" fill="#e97892">
+      <path d="M 109.4522094726562 47.61948776245117 L 1.338042497634888 47.61948776245117 L 55.39512634277344 0.6623076796531677 L 109.4522094726562 47.61948776245117 Z" stroke="none"/>
+      <path d="M 55.39512634277344 1.3245849609375 L 2.676071166992188 47.11948394775391 L 108.1141815185547 47.11948394775391 L 55.39512634277344 1.3245849609375 M 55.39512634277344 -7.62939453125e-06 L 110.7902526855469 48.11948394775391 L 0 48.11948394775391 L 55.39512634277344 -7.62939453125e-06 Z" stroke="none" fill="#707070"/>
+    </g>
+    <path id="Path_27" data-name="Path 27" d="M0,0V92.049l21.115,16.14Z" transform="translate(1496 137.843) rotate(-3)" fill="#e44373" stroke="#707070" stroke-width="1"/>
+    <path id="Path_28" data-name="Path 28" d="M23.867,0V92.049L0,108.19Z" transform="translate(1665.652 137.855) rotate(-2)" fill="#e74172" stroke="#707070" stroke-width="1"/>
+    <g id="Ellipse_17" data-name="Ellipse 17" transform="translate(1558.415 234)" stroke="#707070" stroke-width="1">
+      <ellipse cx="8.5" cy="10.5" rx="8.5" ry="10.5" stroke="none"/>
+      <ellipse cx="8.5" cy="10.5" rx="8" ry="10" fill="none"/>
+    </g>
+    <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(1614.415 235)" stroke="#707070" stroke-width="1">
+      <ellipse cx="8.5" cy="10" rx="8.5" ry="10" stroke="none"/>
+      <ellipse cx="8.5" cy="10" rx="8" ry="9.5" fill="none"/>
+    </g>
+    <path id="Path_29" data-name="Path 29" d="M-784.636-958l-35.831,12.833V-912.6l35.831,15.106,34.167-15.106v-32.571Z" transform="translate(2382.002 1211.824)" fill="#e24677" stroke="#707070" stroke-width="1"/>
+    <g id="Ellipse_19" data-name="Ellipse 19" transform="translate(1570.874 274.185)" fill="#c20d56" stroke="#707070" stroke-width="1">
+      <ellipse cx="9.366" cy="9.773" rx="9.366" ry="9.773" stroke="none"/>
+      <ellipse cx="9.366" cy="9.773" rx="8.866" ry="9.273" fill="none"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(1601.008 273.37)" fill="#c51153" stroke="#707070" stroke-width="1">
+      <ellipse cx="9.366" cy="9.773" rx="9.366" ry="9.773" stroke="none"/>
+      <ellipse cx="9.366" cy="9.773" rx="8.866" ry="9.273" fill="none"/>
+    </g>
+  </g>
+</svg>
