@@ -18,6 +18,8 @@ import Home from "./components/Home";
 import { Button } from "@material-ui/core";
 import { eventConnect, eventPublish, eventPublishType, eventSetCallback, eventSubscribe } from "./components/eventBroker/eventHandler";
 import Webcam from "react-webcam";
+import JoinPage from "./components/Join";
+import Room from "./components/Room";
 
 function CurrentPath() {
   const location = useLocation();
@@ -39,7 +41,8 @@ function App() {
               <Route exact path="/zoo">
                 <Zoo />
               </Route>
-              <Route path="/room/:id" children={<Child />}></Route>
+              <Route path="/room/:id" ><Room/></Route>
+              <Route path="/join"><JoinPage/> </Route>
               <Route path="/create"></Route>
               <Route path="/settings"></Route>
 

@@ -21,6 +21,7 @@ export let accountInfo = {
     name: "",
     email: "",
     uid: "",
+    photoURL: "",
     signed: false
 }
 
@@ -66,12 +67,14 @@ export const signinWithGoogle = (callback) => {
     // ...
     console.log(`sign in successfully as ${user.displayName} ${user.email}`)
     firebase.firestore().collection('users').doc(user.uid).set(
-        {name: user.displayName, email: user.email}
+        {name: user.displayName, email: user.email, avatar: user.photoURL}
     )
     accountInfo.email = user.email
     accountInfo.name = user.displayName
     accountInfo.uid = user.uid
     accountInfo.signed = true
+    accountInfo.photoURL = user.photoURL
+    console.log(user)
 
     setAccount(accountInfo)
 

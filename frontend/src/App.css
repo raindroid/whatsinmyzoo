@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #75a052;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -14,7 +17,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  z-index: 100;
+  background-color: #3c5233;
+  position: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +40,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #3c5233 !important;
 }

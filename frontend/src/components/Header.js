@@ -22,6 +22,9 @@ import MailIcon from '@material-ui/icons/Mail';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import {TopicPublisher} from './eventBroker/eventHandler'
+import { Avatar } from "@material-ui/core";
+import { getAccount } from "./account";
+import { colorPalette } from "../assets/colorPalette";
 
 const activeStype = {
     fontWeight: "bold",
@@ -32,13 +35,20 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
+    appbar: {
+      background: colorPalette.topbar
+    },
+    topbar: {
+    },
     menuButton: {
       marginRight: theme.spacing(2),
     },
     title: {
       flexGrow: 1,
       align: "center",
-      alignItems: 'center'
+      alignItems: 'center',
+      fontFamily: "DailyHours",
+      fontSize: "30px"
     },
     list: {
         width: 250,
@@ -55,6 +65,7 @@ export const Header = () => {
     const [drawerState, setDrawerState] = React.useState(false)
     const open = Boolean(anchorEl);
     const history = useHistory();
+    const account = getAccount();
   
     const handleChange = (event) => {
       setAuth(event.target.checked);
@@ -112,7 +123,7 @@ export const Header = () => {
     return (
       <div className={classes.root}>
         <AppBar position="static" className={classes.appbar}>
-          <Toolbar>
+          <Toolbar className={classes.topbar}>
             
             {auth && (
               <div>
@@ -124,7 +135,7 @@ export const Header = () => {
                   onClick={handleMenu}
                   color="inherit"
                 >
-                  <AccountCircle />
+                  <Avatar alt={account.user} src={account.photoURL} />
                 </IconButton>
                 <Menu
                   id="menu-appbar"
@@ -141,13 +152,14 @@ export const Header = () => {
                   open={open}
                   onClose={handleClose}
                 >
+                  <MenuItem disabled>Welcome back, {account.user}!</MenuItem>
                   <MenuItem onClick={myzoo}>My Zoo</MenuItem>
                   <MenuItem onClick={logout}>Log out</MenuItem>
                 </Menu>
               </div>
             )}
 
-            <Typography variant="h6" className={classes.title} onClick={()=>redirectPath('/')}>
+            <Typography variant="h6" className={classes.title}>
               What's in my ZOO ?!
             </Typography>
 
