@@ -48,8 +48,6 @@ export function LoginDialog(props) {
   
     let callback = () => {
 
-      
-
       if ("updateCount" in props) {
         props.updateCount();
         console.log("Force update");

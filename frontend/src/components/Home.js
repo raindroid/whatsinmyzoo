@@ -25,12 +25,15 @@ const getRandomInt = (min, max) => {
 };
 
 const getRandomOffset = (x = 0, y = 0) => {
-  const posLimit = [-20, 80];
+  const posYLimit = [-80, 100];
+  const posXLimit = [-20, 80];
   const sizeLimit = [120, 180];
+  const rotateLimit = [-20, 20];
   const style = {
     width: `${getRandomInt(sizeLimit[0], sizeLimit[1])}px`,
-    marginTop: `${getRandomInt(posLimit[0], posLimit[1]) + x}px`,
-    marginLeft: `${getRandomInt(posLimit[0], posLimit[1]) + y}px`,
+    marginTop: `${getRandomInt(posYLimit[0], posYLimit[1]) + y}px`,
+    marginLeft: `${getRandomInt(posXLimit[0], posXLimit[1]) + x}px`,
+    transform: `rotate(${getRandomInt(rotateLimit[0], rotateLimit[1])}deg)`,
   };
   return style;
 };
@@ -40,8 +43,8 @@ const animal_images = [
   <Gori style={getRandomOffset()} />,
   <Lion style={getRandomOffset()} />,
   <Fox style={getRandomOffset()} />,
-  <Pig style={getRandomOffset()} />,
   <Gira style={getRandomOffset()} />,
+  <Pig style={getRandomOffset()} />,
   <Elep style={getRandomOffset()} />,
   <Husky style={getRandomOffset()} />,
 ];
@@ -155,7 +158,7 @@ export default function Home() {
       </Grid>
         <DevInfo style={{
             position: "fixed",
-            bottom: "0",
+            bottom: "10px",
             width: "100%"
         }}/>
     </div>

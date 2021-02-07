@@ -21,6 +21,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
+import {TopicPublisher} from './eventBroker/eventHandler'
 
 const activeStype = {
     fontWeight: "bold",

@@ -24,7 +24,7 @@ export let accountInfo = {
     signed: false
 }
 
-export const createUserWithEmailAndPassword = (name, email, password) => {
+export const createUserWithEmailAndPassword = (name, email, password, callback) => {
     // console.log(`creating accout with '${email}' and '${password}'`)
     firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((user) => {
@@ -36,6 +36,12 @@ export const createUserWithEmailAndPassword = (name, email, password) => {
         accountInfo.name = name
         accountInfo.uid = user.uid
         accountInfo.signed = true
+        setAccount(accountInfo)
+    
+        if (callback) {
+            console.log("Executing callback from signinWithGoogle")
+            callback(accountInfo)
+        }
     })
     .catch((error) => {
         var errorCode = error.code;
@@ -67,7 +73,7 @@ export const signinWithGoogle = (callback) => {
     accountInfo.uid = user.uid
     accountInfo.signed = true
 
-      setAccount(accountInfo)
+    setAccount(accountInfo)
 
     if (callback) {
         console.log("Executing callback from signinWithGoogle")
@@ -86,7 +92,7 @@ export const signinWithGoogle = (callback) => {
   });
 }
 
-export const signinWithEmail = (email, password) => {
+export const signinWithEmail = (email, password, callback) => {
     firebase.auth().signInWithEmailAndPassword(email, password)
   .then((user) => {
     // Signed in 
@@ -101,6 +107,12 @@ export const signinWithEmail = (email, password) => {
     // accountInfo.name = user.displayName
     accountInfo.uid = user.user.uid
     accountInfo.signed = true
+    setAccount(accountInfo)
+
+    if (callback) {
+        console.log("Executing callback from signinWithGoogle")
+        callback(accountInfo)
+    }
   })
   .catch((error) => {
     var errorCode = error.code;
