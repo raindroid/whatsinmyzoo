@@ -1,7 +1,19 @@
 ## Inspiration
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/386/123/datas/original.png" height="200"/>
 During this COVID-19 pandemic time, most of us are working or studying at home. We've all had moments where we wanted to go to the library to study but we can't; or wanted to go and hang out with friends and chat about life, but we can't. The number of covid cases is declining steadily, but how about our mental health? We are having much fewer social interactions than normal. From a poll conducted by KFF, 53% of adults in the United States reported that their mental health has been negatively impacted due to worry and stress over the coronavirus time. 
 
 With all that, we want to come up with a way to address the social anxieties we have caused by the pandemic.
+
+## Video Introduction & Demo
+[![Video Demo](http://img.youtube.com/vi/bjh7DhCyrmI/0.jpg)](http://www.youtube.com/watch?v=bjh7DhCyrmI "WhatsInMyZoo - UottaHacks Project")
+
+## UI
+<p float="left">
+  <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/385/670/datas/gallery.jpg" height="240"/>
+  <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/386/105/datas/gallery.jpg" height="240"/>
+  <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/386/085/datas/gallery.jpg" height="240"/>
+  <img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/386/093/datas/gallery.jpg" height="240"/>
+</p>
 
 ## What it does
 **What's in my zoo?!** is a web app that allows individuals to chat, call, or live streaming within an online room. What makes our app different from other chat apps? All of the session rooms can be made public so everyone sees it can join. Each room could be a working environment or a library/study environment. 
@@ -44,3 +56,5 @@ Our app is intended to increase productivity and increase the level of social in
 5. Gallery collection that displays all the animal badges that users hold, with the rarity of the animal also shown.
 6. Virtual AI that monitors the session room to make sure everyone follows the rule in each session.
 
+# Link
+[Devpost](https://devpost.com/software/what-s-in-my-zoo) 
